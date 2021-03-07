@@ -4,11 +4,12 @@ https://practice.geeksforgeeks.org/problems/relative-sorting4323/1
 """
 Method 3 (Use Hashing) 
 
-Loop through A1[], store the count of every number in a HashMap (key: number, value: count of number)
-Loop through A2[], check if it is present in HashMap, if so, put in output array that many times and remove the number from HashMap.
-Sort the rest of the numbers present in HashMap and put in the output array.
-from collections import Counter
+1.Loop through A1[], store the count of every number in a HashMap (key: number, value: count of number)
+2.Loop through A2[], check if it is present in HashMap, if so, put in output array that many times and remove the number from HashMap.
+3.Sort the rest of the numbers present in HashMap and put in the output array.
 """
+from collections import Counter
+
 
 # Function to sort arr1 
 # according to arr2
