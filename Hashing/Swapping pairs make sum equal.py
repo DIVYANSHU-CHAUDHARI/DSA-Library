@@ -73,7 +73,7 @@ findSwapValues(A,B)
 #Time Complexity :- O(n*m)
 
 
-#Approach3:
+#Approach3 Optimized Solution:
 def findSwapValues(self,a, n, b, m):
         a.sort()
         b.sort()
