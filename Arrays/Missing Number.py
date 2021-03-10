@@ -2,7 +2,7 @@
 https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/1#
 """
 #1.Missing number
--->Approach 1 (Sum formula):
+#-->Approach 1 (Sum formula):
 
 def MissingNumber(array,n):
     totalSum = ((n)*(n+1))//2
