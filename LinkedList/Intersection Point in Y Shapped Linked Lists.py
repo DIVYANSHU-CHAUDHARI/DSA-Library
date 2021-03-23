@@ -19,7 +19,7 @@ def intersetPoint(head1,head2):
     while temp1!=temp2:
         temp1 = head2 if temp1 is None else temp1.next
         temp2 = head1 if temp2 is None else temp2.next
-    
+    #if both reach end return -1 else return intersection point node value
     return -1 if temp1 is None else temp1.data
  
 
