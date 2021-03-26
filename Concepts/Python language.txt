@@ -1,2 +1,6 @@
 1. not None -> True
-2.not (any value) -> False
+2. not (any value) -> False
+-----------------------------
+positive_infnity = float('inf')
+negative_infnity = float('-inf')
+-----------------------------
