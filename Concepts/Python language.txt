@@ -1,0 +1,2 @@
+1. not None -> True
+2.not (any value) -> False
