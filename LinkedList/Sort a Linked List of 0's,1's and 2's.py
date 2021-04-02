@@ -1,5 +1,6 @@
 '''
-https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/
+https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/
+Method 2 is also good
 '''
 #TC:O(n)
 #SC:O(1)
