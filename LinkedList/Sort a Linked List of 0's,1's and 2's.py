@@ -1,3 +1,9 @@
+'''
+https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/
+'''
+#TC:O(n)
+#SC:O(1)
+    
     #Function to sort a linked list of 0s, 1s and 2s.
     def segregate(self, head):
         #Count array for keeping track of no. of 0's,1's and 2's
