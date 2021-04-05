@@ -1,7 +1,8 @@
 '''
 https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1#
 '''
-
+#TC:O(n) where n is the no. of nodes
+#SC:O(height of tree)
 def isIdentical(self,root1, root2):
         #Checking if both trees are empty
         if root1 == None and root2 == None:
