@@ -32,5 +32,28 @@ def solve(arr1, arr2):
         
         # Count of 'e' after appending is zero
         f[e] = 0
-        
-    # Remaining numbers in arr1 in sorted 
+
+       
+    #My solution
+    '''
+    https://practice.geeksforgeeks.org/problems/relative-sorting4323/1#
+    '''
+        #Function to sort an array according to the other array.
+    def relativeSort (self,A1, N, A2, M):
+        #Counter dictionary for keeping count of every integer
+        cntDictA1 = Counter(A1)
+        #modifying A2 to remove duplicates + maintaining order
+        newA2 = sorted(set(A2),key = A2.index)
+        result = []
+        #List of elements in A1 but not in A2
+        remaining = []
+        for element in newA2:
+            if element in A1:
+                result.extend([element]*cntDictA1[element])
+        for element in A1:
+            if element not in result:
+                remaining.append(element)
+        #Remaining elements should be appended in sorted manner
+        remaining = sorted(remaining)
+        result.extend(remaining)
+        return result
