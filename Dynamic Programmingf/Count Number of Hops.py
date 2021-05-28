@@ -13,6 +13,22 @@ Let dp[i] denotes the number of ways to reach on i^{th} step:
 
 dp[i] = dp[i−1]+dp[i−2]
 '''
+#TC:O(N)
+#SC:O(N)
+class Solution:
+    #Function to count the number of ways in which frog can reach the top.
+    def countWays(self,n):
+        if n==0 or n==1:return n
+        t = [-1]*(n+1)
+        if n>=2:
+            t[0] = 1
+            t[1] = 1
+            t[2] = 2
+            
+            for i in range(3,n+1):
+                t[i]  = t[i-1] + t[i-2] + t[i-3]
+        return t[n]%1000000007
+#LC solution with only 1 or 2 steps allowed as a jum.
 class Solution:
     def climbStairs(self, n: int) -> int:
         dp = [-1]*(n+1)
