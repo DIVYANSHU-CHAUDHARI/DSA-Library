@@ -1,6 +1,8 @@
   '''
   https://practice.geeksforgeeks.org/problems/form-a-palindrome2544/1/?track=md-dp&batchId=144
   '''
+#Time complexity: O(N^2) 
+#Auxiliary Space: O(N^2)
   
   def findMinInsertions(self, S):
         n = len(S)
