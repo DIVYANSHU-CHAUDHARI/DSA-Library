@@ -1,3 +1,6 @@
+'''
+https://practice.geeksforgeeks.org/problems/subarrays-with-sum-k/1/?track=md-hashing&batchId=144
+'''
 #TC:O(n)
 #SC:O(n)
 
