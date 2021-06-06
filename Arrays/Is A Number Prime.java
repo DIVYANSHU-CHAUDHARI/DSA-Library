@@ -46,7 +46,8 @@ import java.util.*;
    }
 //Approach3:Even if we find a factor f1 less than root(n) which divides n.Than it is sufficient to say that n is not prime.We do not need to check
           //for the counterpart f2 as it will definitely divide n.Therefore we dont need to check for f2.
-// f1*f2 = n and f1<=f2 .f1 and f2 simultaneously cannot be greater than root(n).We only check for f1's which can divide n.
+// f1*f2 = n than there exists f1 among f1 and f2 such that f1<=f2 .
+//f1 and f2 simultaneously cannot be greater than root(n).We only check for f1's which can divide n whose possible values are tillmaximum root(n).
 import java.util.*;
   
   public class Main{
