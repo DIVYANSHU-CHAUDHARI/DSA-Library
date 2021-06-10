@@ -1,3 +1,10 @@
+//n=5
+//* 
+//* * 
+//* * * 
+//* * * * 
+//* * * * *
+
 //Consider outer loop as row and inner loop as column
 //After inner loop gets completed, use System.out.println("") to enter(go to next line)
 //ith row contains i stars
