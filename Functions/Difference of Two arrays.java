@@ -1,4 +1,6 @@
-
+//1.calculating diff = arr[j]-borrow for the current last digit of the greater array and current borrow.
+//2.if i>=0 ie if the array1 exists than additionally subtract arr[i]
+//3.if Diff<0 then additionally add 10 to the diff.
 import java.io.*;
 import java.util.*;
 
