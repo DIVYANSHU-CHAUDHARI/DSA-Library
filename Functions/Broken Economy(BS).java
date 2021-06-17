@@ -6,6 +6,7 @@ Step2:If the target value is less than nums[mid],then there is a chance that num
       and update right = mid-1;
 Step3:If the target value is greater than nums[mid],then there is a chance that nums[mid] is the floor value.Here, current, floor = nums[mid] 
       and update left = mid+1;
+Step4:Agar ceil or floor value dosent exist,print -1 for that.
 Step4:Print ceil and floor value of value.
 
 */
@@ -23,8 +24,8 @@ public static void main(String[] args) throws Exception {
     }
     int target = scn.nextInt();
     
-    int ceil = 0;
-    int floor = 0;
+    int ceil = -1;
+    int floor = -1;
     int left = 0;
     int right = nums.length-1;
     
