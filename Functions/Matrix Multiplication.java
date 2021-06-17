@@ -26,6 +26,7 @@ public static void main(String[] args) throws Exception {
     //If multiplication is possible
     //Result matrix is n1xm2 dimensions.Fill this matrix using nested loops.
     if(m1==n2){
+        int[][] resultMat= new int[n1][m2];
         int cd = m1;
         for(int i=0;i<n1;i++){
             for(int j=0;j<m2;j++){
@@ -33,10 +34,16 @@ public static void main(String[] args) throws Exception {
                 for(int k=0;k<cd;k++){
                     sum+=arr1[i][k] * arr2[k][j];
                 }
-                System.out.print(sum+" ");
+                resultMat[i][j] = sum;
+            }
+        }
+        for(int i=0;i<n1;i++){
+            for(int j=0;j<m2;j++){
+                System.out.print(resultMat[i][j]+" ");
             }
             System.out.println();
         }
+        
     }else{
         System.out.println("Invalid input");
     }
