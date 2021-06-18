@@ -66,17 +66,19 @@ class Solution {
     void dfs(int i,int j,char[][] grid){
         int x = i;
         int y = j;
+        if((x<0 || x>grid.length-1) || (y<0 || y>grid[0].length-1) || grid[x][y]!='1')return;
         grid[x][y] = '0';
-        int[] rr = {-1,1,0,0};
-        int[] cc = {0,0,1,-1};
-        for(int k=0;k<4;k++){
-            if(isValid(x+rr[k],y+cc[k],grid)){
-                    dfs(x+rr[k],y+cc[k],grid);
-                }
-        }
-    }
-    boolean isValid(int x,int y,char[][] grid){
-        return (x>=0 && x<grid.length) && (y>=0 && y<grid[0].length) && grid[x][y]!='0';
-    }
+        //int[] rr = {-1,1,0,0};
+        //int[] cc = {0,0,1,-1};
+        //for(int k=0;k<4;k++){
+        //           dfs(x+rr[k],y+cc[k],grid);
+        //        }
+        //}
+        dfs(x-1,y,grid);
+        dfs(x,y-1,grid);
+        dfs(x+1,y,grid);
+        dfs(x,y+1,grid);
+  
+}
 }
    
