@@ -1,5 +1,9 @@
 //https://classroom.pepcoding.com/myClassroom/the-switch-program-3/string,-stringbuilder-and-arraylist/cpss-official/ojquestion
 //This is axis and orbit method to count total substrings.
+
+//TC:O(n*2)
+//SC:O(n)
+
 import java.io.*;
 import java.util.*;
 
