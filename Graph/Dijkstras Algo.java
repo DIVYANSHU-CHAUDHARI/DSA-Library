@@ -8,6 +8,7 @@ class Solution
         boolean[] finished = new boolean[V];
         int[] distance = new int[V];
         Arrays.fill(distance,Integer.MAX_VALUE);
+        //We are considering source index as the starting point and therefore its distance is updated as 0.
         distance[S] = 0;
         for(int count = 0;count<V-1;count++){
             int minV = minDistVertex(finished,distance);
