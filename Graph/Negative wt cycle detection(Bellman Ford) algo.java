@@ -1,7 +1,8 @@
 //https://practice.geeksforgeeks.org/problems/negative-weight-cycle3504/1#
 //Returning distances array will result into bellmanford algo.
-TC:O(VE)=O(V^2)  minimum if , no.of edges = no. of vertices
-TC:O(V^3) as for complete graph , no. of edges = O(V^2)
+//TC:O(VE)=O(V^2)  minimum if , no.of edges = no. of vertices
+//TC:O(V^3) as for complete graph , no. of edges = O(V^2)
+//SC:O(V)
 class Solution
 {
     public int isNegativeWeightCycle(int n, int[][] edges)
