@@ -30,15 +30,29 @@ Space complexity : O(N) We need space proportionate to N to account for the max 
 This stack keeps track of the function calls to fib(N).
 '''
 #Recursive Memoized
-class Solution:
-    def __init__(self):
-        self.memo = defaultdict(lambda:-1)
-    def fib(self, n: int) -> int:
-        if n==0 or n==1:
-            if self.memo[n] != -1:return self.memo[n]
-            self.memo[n] = n
-            return self.memo[n]
-        if self.memo[n]!=-1:return self.memo[n]
-        self.memo[n] = self.fib(n-1)+self.fib(n-2)
-        
-        return self.memo[n]
+import java.io.*;
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) throws Exception {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int[] dp  = new int[n+1];
+    System.out.println(fib(n,dp));
+ }
+ public static int fib(int n,int[] dp){
+     if(n==0 || n==1){
+         return n;
+     }
+     if(dp[n]!=0){
+         return dp[n];
+     }
+     int nm1 = fib(n-1,dp);
+     int nm2 = fib(n-2,dp);
+     int fn  = nm1+nm2;
+     dp[n] = fn ;
+     return fn;
+ }
+
+}
