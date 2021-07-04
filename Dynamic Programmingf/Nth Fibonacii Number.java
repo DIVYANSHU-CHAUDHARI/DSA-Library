@@ -1,13 +1,22 @@
     #Iterative Approach
     #TC:O(n)
     #SC:O(n)
-    def nthFibonacci (ob, n):
-        t = [0]*(n+1)
-        t[0]=0
-        t[1] =1
-        for i in range(2,n+1):
-            t[i] = t[i-1]+t[i-2] 
-        return t[n]%1000000007
+        
+     public static int fib(int n,int[] dp){
+     for(int i=0;i<dp.length;i++){
+         
+         if(i==0 || i==1){
+             dp[i] = i;
+         }
+         else{
+             dp[i] = dp[i-1]+dp[i-2];
+         }
+         
+     }
+     return dp[n];
+ }
+
+}
     
     #Iterative with O(1) space
     class Solution:
