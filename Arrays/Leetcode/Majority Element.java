@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/majority-element/
 //Brute Force Solution
 //TC:O(n2)
 //SC:(1)
