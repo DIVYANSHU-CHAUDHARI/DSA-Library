@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+
 import java.io.*;
 import java.util.*;
 
@@ -40,8 +42,10 @@ public class Main {
             }
             righttoleft[i] = maxprofit;
         }
-        //System.out.println(Arrays.toString(lefttoright));
-        //System.out.println(Arrays.toString(righttoleft));
+        
+        //lefttoright[i] gives the maximum profit for atmost 1 transaction from 0 to ith index
+        //righttoleft[i] gives the maximum profit for atmost 1 transaction from last index to the ithe index
+        
         int maximum = 0;
         for(int i=0;i<n;i++){
             maximum = Integer.max(maximum,lefttoright[i]+righttoleft[i] );
