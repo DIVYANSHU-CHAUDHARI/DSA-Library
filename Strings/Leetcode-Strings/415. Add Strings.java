@@ -1,3 +1,5 @@
+//TC:O(max(n1,n2)) where n1 and n2 are the lengths of both the strings 
+//SC:O(max(n1,n2)) because the length of the new string is at most max(n1,n2)
 class Solution {
     public String addStrings(String num1, String num2) {
         StringBuilder res = new StringBuilder();
@@ -6,8 +8,8 @@ class Solution {
         int p2 = num2.length()-1;
         
         while(p1>=0 || p2>=0){
-            int x1 = p1>=0?num1.charAt(p1)-'0':0;
-            int x2 = p2>=0?num2.charAt(p2)-'0':0;
+            int x1 = p1<0?0:num1.charAt(p1)-'0';
+            int x2 = p2<0?0:num2.charAt(p2)-'0';
             int value = (x1+x2+carry)%10;
             carry = (x1+x2+carry)/10;
             res.append(value);
