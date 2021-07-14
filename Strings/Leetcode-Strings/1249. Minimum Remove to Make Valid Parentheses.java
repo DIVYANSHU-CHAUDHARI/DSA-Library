@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
-
+//https://www.youtube.com/watch?v=Givpwgu9IIc
 /*
 Intuition
 To make the string valid with minimum removals, we need to get rid of all parentheses that do not have a matching pair.
