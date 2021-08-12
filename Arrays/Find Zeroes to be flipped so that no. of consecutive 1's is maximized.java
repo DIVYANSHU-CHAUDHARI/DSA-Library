@@ -5,7 +5,7 @@
 //A Simple Solution is to consider every subarray by running two loops. For every subarray, count number of zeroes in it. 
 //Return the maximum size subarray with m or less zeroes. Time Complexity of this solution is O(n2).
 
-//Efficient approach
+//Efficient approach:Sliding window
 //TC: O(n)
 //SC: O(1)
 class Solve {
