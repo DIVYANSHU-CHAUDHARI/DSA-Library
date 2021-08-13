@@ -1,4 +1,13 @@
 //https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence2449/1
+//Naive Approach: The idea is to first sort the array and find the longest subarray with consecutive elements. 
+//After sorting the array and removing the multiple occurrences of elements, run a loop and keep a count and max (both initially zero). 
+//Run a loop from start to end and if the current element is not equal to the previous (element+1) then set the count to 1 else increase the count. 
+//Update max with a maximum of count and max. 
+//TC:O(nlogn)
+//SC:(1)
+
+
+//Efficient solution - Hashing
 //TC:O(n)
 //SC:O(n)
 class Solution
