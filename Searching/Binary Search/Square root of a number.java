@@ -42,3 +42,33 @@ class Solution
 		return ans;	
 	 }
 }
+
+
+//With floating part included eg sqrt of 18 is 4.24 i.e 2 floating point places(p=2)
+static float root(int N,int p) {
+        float ans = 0;
+        int l = 0;
+        int r = N-1;
+        //Integer part of the ans
+        while(l<=r){
+            int mid = (l+r)/2;
+            if(mid*mid<=N){
+                ans = mid;
+                l = mid+1;
+            }else{
+                r = mid-1;
+            }
+        }
+        //Floating point part of the ans
+        //checking from 0...9 to get as close to the answer as possible
+        float inc = 0.1f;
+        for(int i=1;i<=p;i++){
+            while(ans*ans<=N){
+                ans = ans + inc;
+            }
+            ans = ans - inc;
+            inc = inc/10.0f;
+        }
+
+        return ans;
+    }
