@@ -24,20 +24,21 @@ class Solution
 {
      long floorSqrt(long x)
 	 {
-		long ans = 0;
-		long l = 0;
-		long r = x;
-		//Search space (0...N)
-		while(l<=r){
-		    long mid = (l+r)/2;
-		    if(mid*mid<=x){
-		        ans = mid;
-		        l = mid+1;
-		    }else{
-		        r = mid-1;
+		    long ans = 0;
+		    long l = 0;
+		    long r = x;
+	     //Search space is (0....N)
+		    while(l<=r){
+		        long mid = (l+r)/2;
+		        if(mid*mid==x){
+		            return mid;
+		        }else if(mid*mid<x){
+    		        ans = mid;
+    		        l = mid+1;
+		        }else{
+		            r = mid-1;
+		        }
 		    }
-		}
-		
-	return ans;	
+		return ans;	
 	 }
 }
