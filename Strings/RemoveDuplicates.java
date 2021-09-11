@@ -1,6 +1,7 @@
-"""
-https://practice.geeksforgeeks.org/problems/remove-duplicates3034/1#
-"""
+//https://practice.geeksforgeeks.org/problems/remove-duplicates3034/1#
+
+//LinkedHashSet That will preserve your ordering, and remove duplicates. 
+
 class Solution {
     String removeDups(String S) {
         Set<Character> charSet = new LinkedHashSet<>();
