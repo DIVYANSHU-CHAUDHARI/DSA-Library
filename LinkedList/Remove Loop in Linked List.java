@@ -1,6 +1,6 @@
-"""
-https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1#
-"""
+//https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1#
+//https://www.youtube.com/watch?v=aIR0s1tY2Vk
+
 //Approach1:Check editorial Method 3
 //TC:O(n)
 //SC:O(1)
