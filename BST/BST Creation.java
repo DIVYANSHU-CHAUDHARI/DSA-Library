@@ -1,3 +1,4 @@
+//Prateek narang course
 
 public class Practise {
     public static void main(String[] args) {
@@ -15,7 +16,13 @@ public class Practise {
         Inordertraversal(root.right);
     }
     public static Node insert(Node root,int key){
+        //Base case when there is no tree or subtree,then create a new node and return
+        
         if(root==null)return new Node(key);
+        
+        //If there is a node,compare its value with root nodes value and accordingly insert into its left or right subtree.assign it to parents 
+        //left or right pointers to establish connection.
+        
         else{
             if(key<=root.key){
                 root.left = insert(root.left,key);
