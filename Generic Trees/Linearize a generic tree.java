@@ -19,7 +19,7 @@ public static Node getTail(Node node){
     //[20k]
     //Repeat these steps till there is only one element left in the parent nodes children
     
-    while(node.children.size()>0){
+    while(node.children.size()>1){
         Node slChainKiTail = getTail(node.children.get(node.children.size()-2));
         slChainKiTail.children.add(node.children.get(node.children.size()-1));
         node.children.remove(node.children.size()-1);
