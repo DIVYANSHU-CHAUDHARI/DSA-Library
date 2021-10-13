@@ -4,6 +4,10 @@
     ArrayList<Integer> l2 = nodeToRootPath(node,d2);
     int i = l1.size()-1;
     int j = l2.size()-1;
+    
+    //Start comparison from the root node till you get nodes that are not equal in both path
+    //Return the previous compared matching node.
+    
     while(i>=0 && j>=0){
         if(l1.get(i)!=l2.get(j)){
             break;
