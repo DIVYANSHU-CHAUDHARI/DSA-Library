@@ -8,10 +8,7 @@
     //Start comparison from the root node till you get nodes that are not equal in both path
     //Return the previous compared matching node.
     
-    while(i>=0 && j>=0){
-        if(l1.get(i)!=l2.get(j)){
-            break;
-        }
+    while(i>=0 && j>=0 && l1.get(i)==l2.get(j)){
         i--;
         j--;
     }
