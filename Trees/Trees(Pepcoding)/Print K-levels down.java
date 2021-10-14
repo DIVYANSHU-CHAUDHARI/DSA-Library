@@ -1,4 +1,5 @@
 //Printing of elements is done in preorder fashion.
+//Distance in terms of edges is considered
 
 public static void printKLevelsDown(Node node, int k){
      if(node==null)return;
