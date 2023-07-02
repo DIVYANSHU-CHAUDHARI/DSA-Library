@@ -39,7 +39,7 @@ public class Main {
       j--;
       k--;
     }
-
+    //If carry exists till the last than print it first and than following digits
     if (c > 0) {
       System.out.println(c);
     }
